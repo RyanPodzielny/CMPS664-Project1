@@ -730,6 +730,8 @@ class Normalizer:
         closure = self.compute_closure(self.primary_keys)
         if closure != self.attributes:
             print("- Closure of primary keys cannot determine all attributes")
+        else:
+            print("- Closure of primary keys can determine all attributes")
 
         # If there are candidate keys then we are going to use them as our 
         #   primary keys for the tables we create, so we want to show the user
